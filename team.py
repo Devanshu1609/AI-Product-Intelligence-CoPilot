@@ -81,7 +81,7 @@ idea_intelligence_team = Team(
 
 if __name__ == "__main__":
     user_input = """
-    I have an idea for an AI platform that helps students and early-stage founders 
+    I have to write a research report on an AI platform that helps students and early-stage founders 
     transform rough project concepts into well-structured reports with research data, 
     architecture diagrams, and market validation insights.
     """
