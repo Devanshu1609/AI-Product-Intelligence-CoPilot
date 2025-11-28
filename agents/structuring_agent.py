@@ -112,7 +112,7 @@ StructuringAgent = Agent(
         ───────────────────────────────
         RULES:
         - Select the structure based on report_type.
-        - Include short one-line descriptions for each section.
+        - Include descriptions for each section.
         - Maintain logical flow and avoid duplication.
         - Output ONLY JSON.
     """,

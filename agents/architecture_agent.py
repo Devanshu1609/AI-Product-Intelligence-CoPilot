@@ -47,7 +47,7 @@ ArchitectureAgent = Agent(
              "architecture_diagram": "```mermaid ...```",
              "data_flow": "Explain how data moves through the system."
            }
-        4. provide clear explanations for each section.
+        4. provide clear and detailed explanations for each section.
         5. Always output in valid JSON format — no text outside JSON.
     """,
     tools=[],

@@ -64,7 +64,7 @@ ReportGeneratorAgent = Agent(
 
         RULES:
         - Always return valid JSON.
-        - Summarize and format data clearly and in detail.
+        - Elaborate, Summarize and format data clearly and in detail.
         - Include subheadings, bullets, and numbered sections where relevant.
         - Avoid repetition between sections.
     """,

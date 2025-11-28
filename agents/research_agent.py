@@ -48,7 +48,7 @@ ResearchAgent = Agent(
            - 3–5 research papers or studies related to the idea
            - 3–5 existing products or startups solving similar problems
            - Any relevant public datasets or APIs
-        3. Summarize your findings clearly under these sections:
+        3. Summarize your findings clearly and in a deatiled way under these sections:
            - Research Papers Summary
            - Existing Solutions
            - Available Datasets / APIs
@@ -61,7 +61,7 @@ ResearchAgent = Agent(
              "key_insights": "Proper discursive paragraph summarizing what you learned."
            }
 
-        Be factual and discursive. write summary and description in proper detail. If information is not available, respond with an empty array [] for that section.
+        Be factual, elaborative and discursive. Elaborate summary and description in proper detail. If information is not available, respond with an empty array [] for that section.
         Do NOT output explanations outside JSON.
     """,
     tools=[ArxivTools(), WebBrowserTools(), SerpApiTools()],

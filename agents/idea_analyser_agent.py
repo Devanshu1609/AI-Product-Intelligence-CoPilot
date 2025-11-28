@@ -1,36 +1,14 @@
 # app/agents/idea_analyzer_agent.py
 
-"""
-───────────────────────────────────────────────────────────────
-🤖 IDEA ANALYZER AGENT (Agno Framework)
-───────────────────────────────────────────────────────────────
-Purpose:
---------
-This agent takes a raw, unstructured idea description from a user 
-(e.g., “I want to build an AI app that helps farmers detect crop diseases.”)
-and transforms it into a well-structured, detailed summary 
-that clearly defines the problem, solution, target users, and other
-key attributes.
-
-It acts as the **foundation** for the multi-agent system —
-subsequent agents (Research, Market, Architecture, etc.) rely on
-its structured output.
-
-───────────────────────────────────────────────────────────────
-"""
-
 from agno.agent import Agent
 from agno.models.openai import OpenAIChat
 from agno.tools.googlesearch import GoogleSearchTools
 from agno.run.agent import RunOutput
 
-# Initialize the LLM model
-# You can replace this with Gemini, Claude, or Ollama
+
 llm = OpenAIChat(id="gpt-4.1")
 
-# ─────────────────────────────────────────────────────────────
-# 🧠 Define the Agent
-# ─────────────────────────────────────────────────────────────
+
 IdeaAnalyzerAgent = Agent(
     name="Idea Analyzer Agent",
     description="""
@@ -77,6 +55,3 @@ IdeaAnalyzerAgent = Agent(
     markdown=True
 )
 
-# user_idea = "I want to make an app that helps students organize their study time using AI."
-# response: RunOutput = IdeaAnalyzerAgent.run(user_idea, stream=False)
-# print(response.content)

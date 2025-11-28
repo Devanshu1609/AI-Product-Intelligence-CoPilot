@@ -44,7 +44,7 @@ MarketImpactAgent = Agent(
         Input: A structured idea enriched with research outputs.
         You must:
         1. Identify the **core industry/domain** from the input.
-        2. Use your tools (`market_trends_tool`, `competitor_finder_tool`)
+        2. Use your tools
            to gather:
             - Market demand signals
             - Existing competitors
@@ -58,13 +58,13 @@ MarketImpactAgent = Agent(
            {
              "market_trends": "Summary of popularity and user demand",
              "competitors": [ {"name": "...", "url": "..."} ],
-             "target_market": "Brief summary of audience and region",
+             "target_market": "Detailed summary of audience and region",
              "feasibility_analysis": "Discuss strengths, risks, and adoption potential",
              "expected_impact": "Predicted positive social/economic effects"
            }
 
         Be objective and data-driven. Use the results of your tools.
-        Keep it factual and concise. Only return valid JSON output.
+        Keep it factual and detailed. Only return valid JSON output.
     """,
     tools=[WebBrowserTools(), SerpApiTools()],
     model=llm,
